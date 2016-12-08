@@ -8,15 +8,16 @@
 ### 歐付寶金流(多元的收款方式)
 
 適用版本	
-1.5.X.X(https://github.com/allPay/allPayPHPCartModule/tree/master/OpenCart/payment/1.5.X.X "OpenCart 1.5")
-2.0.X.X~2.2.0.0(https://github.com/allPay/allPayPHPCartModule/tree/master/OpenCart/payment/2.0 "OpenCart 2.0")
+[1.5.X.X](https://github.com/allPay/allPayPHPCartModule/tree/master/OpenCart/payment/1.5.X.X "OpenCart 1.5")
+[2.0.X.X~2.2.0.0](https://github.com/allPay/allPayPHPCartModule/tree/master/OpenCart/payment/2.0 "OpenCart 2.0")
 
 編碼 UTF8
 
 ### 歐付寶電子發票
 ● 自動開立● 手動開立	
 
-適用版本 2.0(https://github.com/allPay/allPayPHPCartModule/tree/master/OpenCart/e-invoice/2.0 "OpenCart 2.0")
+適用版本 
+[2.0](https://github.com/allPay/allPayPHPCartModule/tree/master/OpenCart/e-invoice/2.0 "OpenCart 2.0")
 編碼     UTF8
 
 ## 2. ECSHOP(不支援非官方釋出的購物車系統)
@@ -24,7 +25,7 @@
 ### 歐付寶金流(多元的收款方式)
 
 適用版本
-2.7X(https://github.com/allPay/allPayPHPCartModule/tree/master/ECSHOP/payment/2.7X "ECSHOP 2.7")
+[2.7X](https://github.com/allPay/allPayPHPCartModule/tree/master/ECSHOP/payment/2.7X "ECSHOP 2.7")
 編碼     UTF8
 
 ## 3. Magento
@@ -32,9 +33,9 @@
 ### 歐付寶金流(多元的收款方式)
 
 適用版本
-1.7.X(https://github.com/allPay/allPayPHPCartModule/tree/master/Magento/payment/1.7.X-1.9.X "Magento 1.7.x-1.9.x")
-1.8.X(https://github.com/allPay/allPayPHPCartModule/tree/master/Magento/payment/1.7.X-1.9.X "Magento 1.7.x-1.9.x")
-1.9.X(https://github.com/allPay/allPayPHPCartModule/tree/master/Magento/payment/1.7.X-1.9.X "Magento 1.7.x-1.9.x")
+[1.7.X](https://github.com/allPay/allPayPHPCartModule/tree/master/Magento/payment/1.7.X-1.9.X "Magento 1.7.x-1.9.x")
+[1.8.X](https://github.com/allPay/allPayPHPCartModule/tree/master/Magento/payment/1.7.X-1.9.X "Magento 1.7.x-1.9.x")
+[1.9.X](https://github.com/allPay/allPayPHPCartModule/tree/master/Magento/payment/1.7.X-1.9.X "Magento 1.7.x-1.9.x")
 編碼     UTF8
 
 ## 4. WooCommerce for WordPress
@@ -42,8 +43,7 @@
 ### 歐付寶金流(多元的收款方式)
 
 適用版本
-WordPress 3.X / 4.X 
-WooCommerce 2.1.X~2.5.X (https://github.com/allPay/allPayPHPCartModule/tree/master/WooCommerce/payment/WordPress%203.X-4.X%20WooCommerce%202.X "WooCommerce for WordPress")
+[WordPress 3.X/4.X WooCommerce 2.1.X~2.5.X] (https://github.com/allPay/allPayPHPCartModule/tree/master/WooCommerce/payment/WordPress%203.X-4.X%20WooCommerce%202.X "WooCommerce for WordPress")
 編碼     UTF8
 
 ## 5. PrestaShop
@@ -51,7 +51,7 @@ WooCommerce 2.1.X~2.5.X (https://github.com/allPay/allPayPHPCartModule/tree/mast
 ### 歐付寶金流(多元的收款方式)
 
 適用版本
-1.6 (https://github.com/allPay/allPayPHPCartModule/tree/master/PrestaShop/payment/1.6 "PrestaShop 1.6")
+[1.6](https://github.com/allPay/allPayPHPCartModule/tree/master/PrestaShop/payment/1.6 "PrestaShop 1.6")
 編碼     UTF8
 
 ## 6. osCommerce
@@ -59,7 +59,7 @@ WooCommerce 2.1.X~2.5.X (https://github.com/allPay/allPayPHPCartModule/tree/mast
 ### 歐付寶金流(多元的收款方式)
 
 適用版本
-2.3.4 (https://github.com/allPay/allPayPHPCartModule/tree/master/osCommerce/payment/2.3.4 "osCommerce 2.3.4")
+[2.3.4](https://github.com/allPay/allPayPHPCartModule/tree/master/osCommerce/payment/2.3.4 "osCommerce 2.3.4")
 
 編碼     UTF8
 
@@ -68,7 +68,6 @@ WooCommerce 2.1.X~2.5.X (https://github.com/allPay/allPayPHPCartModule/tree/mast
 ### 歐付寶金流(多元的收款方式)
 
 適用版本
-Joomla 2.5.28 
-VirtueMart 2.6.2 (https://github.com/allPay/allPayPHPCartModule/tree/master/VirtueMart/payment/Joomla%202.5.28%20VirtueMart%202.6.2 "Joomla 2.5.28 VirtueMart 2.6.2")
+[Joomla 2.5.28 VirtueMart 2.6.2](https://github.com/allPay/allPayPHPCartModule/tree/master/VirtueMart/payment/Joomla%202.5.28%20VirtueMart%202.6.2 "Joomla 2.5.28 VirtueMart 2.6.2")
 
 編碼     UTF8
