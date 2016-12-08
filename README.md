@@ -84,6 +84,6 @@
 
 ¾A¥Îª©¥»
 
-[Joomla 2.5.28 VirtueMart 2.6.2](https://github.com/allPay/allPayPHPCartModule/tree/master/VirtueMart/payment/Joomla%202.5.28%20VirtueMart%202.6.2 "Joomla 2.5.28 VirtueMart 2.6.2")
+[Joomla 2.5.28 VirtueMart 2.6.22](https://github.com/allPay/allPayPHPCartModule/tree/master/VirtueMart/payment/Joomla%202.5.28%20VirtueMart%202.6.22 "Joomla 2.5.28 VirtueMart 2.6.22")
 
 ½s½X     UTF8
