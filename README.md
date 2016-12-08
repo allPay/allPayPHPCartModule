@@ -63,6 +63,7 @@
 ### 歐付寶金流(多元的收款方式)
 
 適用版本
+
 [1.6](https://github.com/allPay/allPayPHPCartModule/tree/master/PrestaShop/payment/1.6 "PrestaShop 1.6")
 
 編碼     UTF8
