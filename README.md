@@ -78,7 +78,17 @@
 
 編碼     UTF8
 
-## 7. VirtueMart
+## 7. HikaShop
+
+### 歐付寶金流(多元的收款方式)
+
+適用版本
+
+[Joomla 2.5.28 HikaShop 2.6.4](https://github.com/allpay/AllPayPHPCartModule/tree/master/HikaShop/payment "Joomla 2.5.28 VirtueMart 2.6.4")
+
+編碼     UTF8
+
+## 8. VirtueMart
 
 ### 歐付寶金流(多元的收款方式)
 
