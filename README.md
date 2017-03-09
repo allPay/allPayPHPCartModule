@@ -54,7 +54,7 @@
 
 ¾A¥Îª©¥»
 
-[WordPress 4.5.3 / 4.6.1 / 4.7.2 WooCommerce 2.5.5 / 2.6.0~2.6.14] (https://github.com/allPay/allPayPHPCartModule/tree/master/WooCommerce/payment/WordPress%203.X-4.X%20WooCommerce%202.X "WooCommerce for WordPress")
+[WordPress 4.5.3 / 4.6.1 / 4.7.2 WooCommerce 2.5.5 / 2.6.0~2.6.14] (https://github.com/allPay/allPayPHPCartModule/tree/master/WooCommerce/payment/WooCommerceforWordPress "WooCommerce for WordPress")
 
 ½s½X     UTF8
 
