@@ -30,7 +30,7 @@
 
 ¾A¥Îª©¥»
 
-[2.7X](https://github.com/allPay/allPayPHPCartModule/tree/master/ECSHOP/payment/2.7X "ECSHOP 2.7")
+[2.7X](https://github.com/allPay/allPayPHPCartModule/tree/master/ECSHOP/payment "ECSHOP 2.7")
 
 ½s½X     UTF8
 
@@ -40,11 +40,11 @@
 
 ¾A¥Îª©¥»
 
-[1.7.X](https://github.com/allPay/allPayPHPCartModule/tree/master/Magento/payment/1.7.X-1.9.X "Magento 1.7.x-1.9.x")
+[1.7.X](https://github.com/allPay/allPayPHPCartModule/tree/master/Magento/payment "Magento 1.7.x")
 
-[1.8.X](https://github.com/allPay/allPayPHPCartModule/tree/master/Magento/payment/1.7.X-1.9.X "Magento 1.7.x-1.9.x")
+[1.8.X](https://github.com/allPay/allPayPHPCartModule/tree/master/Magento/payment "Magento 1.8.x")
 
-[1.9.X](https://github.com/allPay/allPayPHPCartModule/tree/master/Magento/payment/1.7.X-1.9.X "Magento 1.7.x-1.9.x")
+[1.9.X](https://github.com/allPay/allPayPHPCartModule/tree/master/Magento/payment "Magento 1.9.x")
 
 ½s½X     UTF8
 
@@ -64,7 +64,7 @@
 
 ¾A¥Îª©¥»
 
-[1.6](https://github.com/allPay/allPayPHPCartModule/tree/master/PrestaShop/payment/1.6 "PrestaShop 1.6")
+[1.6](https://github.com/allPay/allPayPHPCartModule/tree/master/PrestaShop/payment "PrestaShop 1.6")
 
 ½s½X     UTF8
 
@@ -74,7 +74,7 @@
 
 ¾A¥Îª©¥»
 
-[2.3.4](https://github.com/allPay/allPayPHPCartModule/tree/master/osCommerce/payment/2.3.4 "osCommerce 2.3.4")
+[2.3.4](https://github.com/allPay/allPayPHPCartModule/tree/master/osCommerce/payment "osCommerce 2.3.4")
 
 ½s½X     UTF8
 
@@ -94,6 +94,6 @@
 
 ¾A¥Îª©¥»
 
-[Joomla 2.5.28 VirtueMart 2.6.22](https://github.com/allPay/allPayPHPCartModule/tree/master/VirtueMart/payment/Joomla%202.5.28%20VirtueMart%202.6.22 "Joomla 2.5.28 VirtueMart 2.6.22")
+[Joomla 2.5.28 VirtueMart 2.6.22](https://github.com/allPay/allPayPHPCartModule/tree/master/VirtueMart/payment "Joomla 2.5.28 VirtueMart 2.6.22")
 
 ½s½X     UTF8
