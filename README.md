@@ -61,8 +61,6 @@
 
 ### 歐付寶金流(多元的收款方式)
 
-適用版本
-
 [osCommerce 模組下載](https://github.com/allPay/allPayPHPCartModule/tree/master/osCommerce/payment "osCommerce")
 
 編碼     UTF8
@@ -70,8 +68,6 @@
 ## 7. HikaShop
 
 ### 歐付寶金流(多元的收款方式)
-
-適用版本
 
 [HikaShop 模組下載](https://github.com/allpay/AllPayPHPCartModule/tree/master/HikaShop/payment "Joomla 2.5.28 VirtueMart 2.6.4")
 
@@ -81,8 +77,6 @@
 
 ### 歐付寶金流(多元的收款方式)
 
-適用版本
-
 [VirtueMart 模組下載](https://github.com/allPay/allPayPHPCartModule/tree/master/VirtueMart/payment "Joomla 2.5.28 VirtueMart 2.6.22")
 
 編碼     UTF8
@@ -90,8 +84,6 @@
 ## 9. WHMCS
 
 ### 歐付寶金流(多元的收款方式)
-
-適用版本
 
 [WHMCS 模組下載](https://github.com/allPay/allPayPHPCartModule/tree/master/WHMCS "WHMCS")
 
