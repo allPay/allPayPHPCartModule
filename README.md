@@ -25,7 +25,7 @@
 
 ### 稼腳瑈
 
-[ECSHOP 2.7](https://github.com/allPay/allPayPHPCartModule/tree/master/ECSHOP/payment "ECSHOP 2.7")
+[ECSHOP 家舱更](https://github.com/allPay/allPayPHPCartModule/tree/master/ECSHOP/payment "ECSHOP 2.7")
 
 絪絏     UTF8
 
@@ -45,7 +45,7 @@
 
 ### 稼腳瑈(じΜ蹿よΑ)
 
-[WooCommerce for WordPress 家舱更] (https://github.com/allPay/allPayPHPCartModule/tree/master/WooCommerce/payment/WooCommerceforWordPress "WooCommerce for WordPress")
+[WooCommerce for WordPress 家舱更](https://github.com/allPay/allPayPHPCartModule/tree/master/WooCommerce/payment/WooCommerceforWordPress "WooCommerce for WordPress")
 
 絪絏     UTF8
 
