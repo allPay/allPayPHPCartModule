@@ -33,11 +33,7 @@
 
 ### 稼腳瑈
 
-[Magento 1.7.x 家舱更](https://github.com/allPay/allPayPHPCartModule/tree/master/Magento/payment "Magento 1.7.x")
-
-[Magento 1.8.x 家舱更](https://github.com/allPay/allPayPHPCartModule/tree/master/Magento/payment "Magento 1.8.x")
-
-[Magento 1.9.x 家舱更](https://github.com/allPay/allPayPHPCartModule/tree/master/Magento/payment "Magento 1.9.x")
+[Magento 1.9.2.1~1.9.2.4 家舱更](https://github.com/allPay/allPayPHPCartModule/tree/master/Magento/payment "Magento 1.9.x")
 
 絪絏     UTF8
 
