@@ -9,7 +9,7 @@
 將需要使用的模組啟用  
 5.於Manage Existing Gateways內設定 歐付寶廠商、帳單效期、交易描述  
 
-###注意事項
+###注意事項 
 若有必要更換帳單前綴  
 需先將gateways及callback資料夾檔案內的InvoicePrefix變數設定相同的前綴
 
