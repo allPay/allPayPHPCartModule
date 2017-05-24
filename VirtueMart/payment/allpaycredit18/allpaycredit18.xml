@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.0" type="plugin" group="vmpayment" >
+    <name>AllPay - VitueMart - Credit Card in 18 installments Payment</name>
+    <creationDate>September 2014</creationDate>
+    <author>Andy Chao</author>
+    <authorUrl>http://www.allpay.com.tw</authorUrl>
+    <copyright>Copyright (C) 2014 AllPay Financial Information Service Co., Ltd. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+    <version>1.0.0</version>
+    <description>AllPay Credit Card in 18 installments Payment Plugin</description>
+    <languages>
+        <language tag="en-GB">en-GB.plg_vmpayment_allpaycredit18.ini</language>
+        <language tag="en-GB">en-GB.plg_vmpayment_allpaycredit18.sys.ini</language>
+        <language tag="zh-TW">zh-TW.plg_vmpayment_allpaycredit18.ini</language>
+        <language tag="zh-TW">zh-TW.plg_vmpayment_allpaycredit18.sys.ini</language>
+    </languages>
+    <files>
+        <filename plugin="allpaycredit18">allpaycredit18.php</filename>
+        <filename>AllPay.Payment.Integration.php</filename>
+        <filename>index.html</filename>
+    </files>
+    <params addpath="/administrator/components/com_virtuemart/elements">
+        <param type="vmjpluginwarning" />
+        <param name="test_mode" type="radio" default="yes" label="VMPAYMENT_CREDIT18_TEST_MODE" description="VMPAYMENT_CREDIT18_TEST_MODE_EXPLAIN">
+            <option value="yes">VMPAYMENT_CREDIT18_TEST_MODE_YES</option>
+            <option value="no">VMPAYMENT_CREDIT18_TEST_MODE_NO</option>
+        </param>
+        <param name="test_prefix" type="text" size="50" label="VMPAYMENT_CREDIT18_TEST_PREFIX" description="VMPAYMENT_CREDIT18_TEST_PREFIX_EXPLAIN" />	
+        <param name="merchant_id" type="text" size="50" default="2000132" label="VMPAYMENT_CREDIT18_MERCHANT_ID" description="VMPAYMENT_CREDIT18_MERCHANT_ID_EXPLAIN" />
+        <param name="hash_key" type="text" size="50" default="5294y06JbISpM5x9" label="VMPAYMENT_CREDIT18_HASH_KEY" description="VMPAYMENT_CREDIT18_HASH_KEY_EXPLAIN" />
+        <param name="hash_iv" type="text" size="50" default="v77hoKGq4kWxNNIS" label="VMPAYMENT_CREDIT18_HASH_IV" description="VMPAYMENT_CREDIT18_HASH_IV_EXPLAIN" />
+    </params>
+</install>
