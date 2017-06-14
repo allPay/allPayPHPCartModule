@@ -66,10 +66,10 @@ class ControllerPaymentAllpay extends Controller {
 						$service_url = '';
 						$aio->MerchantID = $this->config->get('allpay_merchant_id');
 						if ($this->model_payment_allpay->isTestMode($aio->MerchantID)) {
-							$service_url = 'https://payment-stage.allpay.com.tw/Cashier/AioCheckOut';
+							$service_url = 'https://payment-stage.allpay.com.tw/Cashier/AioCheckOut/V4';
 							$aio->Send['MerchantTradeNo'] = date('YmdHis');
 						} else {
-							$service_url = 'https://payment.allpay.com.tw/Cashier/AioCheckOut';
+							$service_url = 'https://payment.allpay.com.tw/Cashier/AioCheckOut/V4';
 						}
 						$aio->HashKey = $this->config->get('allpay_hash_key');
 						$aio->HashIV = $this->config->get('allpay_hash_iv');
@@ -93,7 +93,7 @@ class ControllerPaymentAllpay extends Controller {
 							)
 						);
 						# Set the trade descriptions
-						$aio->Send['TradeDesc'] = 'allPay_module_opencart_1.1.1021';
+						$aio->Send['TradeDesc'] = 'OPay_module_opencart_1.1.0609';
 						
 						# Get the chosen payment and installment
 						$type_pieces = explode('_', $payment_type);
@@ -130,11 +130,11 @@ class ControllerPaymentAllpay extends Controller {
 								$aio->SendExtend['Desc_4'] = '';
 								$aio->SendExtend['PaymentInfoURL'] = $aio->Send['ReturnURL'];
 								break;
-							case PaymentMethod::Alipay:
-								$aio->SendExtend['Email'] = $order['email'];
-								$aio->SendExtend['PhoneNo'] = $order['telephone'];
-								$aio->SendExtend['UserName'] = $order['firstname'] . ' ' . $order['lastname'];
-								break;
+							// case PaymentMethod::Alipay:
+							// 	$aio->SendExtend['Email'] = $order['email'];
+							// 	$aio->SendExtend['PhoneNo'] = $order['telephone'];
+							// 	$aio->SendExtend['UserName'] = $order['firstname'] . ' ' . $order['lastname'];
+							// 	break;
 							case PaymentMethod::Tenpay:
 								$aio->SendExtend['ExpireTime'] = date('Y/m/d H:i:s', strtotime('+3 days'));
 								break;
@@ -214,7 +214,7 @@ class ControllerPaymentAllpay extends Controller {
 			# Retrieve the checkout result
 			$invoke_result = $this->model_payment_allpay->invokeAllpayModule();
 			if (!$invoke_result) {
-				throw new Exception('allPay module is missing.');
+				throw new Exception('O\'Pay module is missing.');
 			} else {
 				$aio = new AllInOne();
 				$aio->HashKey = $this->config->get('allpay_hash_key');
@@ -224,7 +224,7 @@ class ControllerPaymentAllpay extends Controller {
 				
 				# Process allPay feedback
 				if(count($allpay_feedback) < 1) {
-					throw new Exception('Get allPay feedback failed.');
+					throw new Exception('Get O\'Pay feedback failed.');
 				} else {
 					# Get the cart order id
 					$cart_order_id = $this->model_payment_allpay->getCartOrderID($allpay_feedback['MerchantTradeNo'], $this->config->get('allpay_merchant_id'));
@@ -273,7 +273,7 @@ class ControllerPaymentAllpay extends Controller {
 						switch($allpay_payment_method) {
 							case PaymentMethod::Credit:
 							case PaymentMethod::WebATM:
-							case PaymentMethod::Alipay:
+							// case PaymentMethod::Alipay:
 							case PaymentMethod::Tenpay:
 							case PaymentMethod::TopUpUsed:
 								if ($return_code != 1 and $return_code != 800) {
@@ -467,7 +467,7 @@ class ControllerPaymentAllpay extends Controller {
 			$result_message = '0|' . $error;
 		}
 		# Return URL log
-		$this->model_payment_allpay->logMessage('Order ' . $cart_order_id . ' process allPay response result : ' . $result_message);
+		$this->model_payment_allpay->logMessage('Order ' . $cart_order_id . ' process O\'Pay response result : ' . $result_message);
 		
 		echo $result_message;
 		exit;

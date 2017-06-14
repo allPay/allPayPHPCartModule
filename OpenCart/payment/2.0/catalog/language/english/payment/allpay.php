@@ -1,7 +1,7 @@
 <?php
 // Text
 // catalog/controller/payment/allpay.php:17
-$_['allpay_text_title'] = 'allPay Integration Payment';
+$_['allpay_text_title'] = 'O\'Pay Integration Payment';
 // catalog/controller/payment/allpay.php:18
 $_['allpay_text_payment_methods'] = 'Payment Methods';
 // catalog/controller/payment/allpay.php:19
@@ -43,4 +43,4 @@ $_['allpay_error_invalid_payment'] = 'Invalid payment method.';
 // catalog/controller/payment/allpay.php:54
 $_['allpay_error_order_id_miss'] = 'Order ID is missing.';
 // catalog/controller/payment/allpay.php:65
-$_['allpay_error_module_miss'] = 'allPay module is missing.';
+$_['allpay_error_module_miss'] = 'O\'Pay module is missing.';

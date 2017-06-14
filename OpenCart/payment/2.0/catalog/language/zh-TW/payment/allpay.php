@@ -43,4 +43,4 @@ $_['allpay_error_invalid_payment'] = '無效的付款方式.';
 // catalog/controller/payment/allpay.php:54
 $_['allpay_error_order_id_miss'] = '訂單編號遺失.';
 // catalog/controller/payment/allpay.php:65
-$_['allpay_error_module_miss'] = 'allPay 模組遺失.';
+$_['allpay_error_module_miss'] = 'O\'Pay 模組遺失.';

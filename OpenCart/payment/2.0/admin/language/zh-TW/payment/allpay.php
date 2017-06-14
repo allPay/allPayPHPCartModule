@@ -4,7 +4,7 @@
 $_['heading_title'] = '歐付寶整合金流';
 
 // Text
-$_['text_allpay'] = '<a href="https://www.allpay.com.tw/" target="_blank"><img src="view/image/payment/allpay.png" style="border: 1px solid #EEEEEE;" /></a>';
+$_['text_allpay'] = '<a href="https://www.allpay.com.tw/" target="_blank"><img src="view/image/payment/opay.png" style="border: 1px solid #EEEEEE;" /></a>';
 // admin/controller/payment/allpay.php:30
 $_['allpay_text_success'] = $_['heading_title'] . ' : 設定已變更';
 // admin/controller/payment/allpay.php:81
