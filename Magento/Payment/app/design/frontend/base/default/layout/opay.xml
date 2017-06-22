@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<layout>
+  <!--<allinone_processing_redirect>
+    <reference name="root">
+      <action method="setTemplate">
+        <template>page/2columns-right.phtml</template>
+      </action>
+      <block name="content" type="allinone/redirect" template="opay/redirect.phtml" />
+    </reference>
+  </allinone_processing_redirect>-->
+  <credit_processing_redirect>
+    <reference name="root">
+      <action method="setTemplate">
+        <template>page/2columns-right.phtml</template>
+      </action>
+      <block name="content" type="credit/redirect" template="opay/redirect.phtml" />
+    </reference>
+  </credit_processing_redirect>
+  <webatm_processing_redirect>
+    <reference name="root">
+      <action method="setTemplate">
+        <template>page/2columns-right.phtml</template>
+      </action>
+      <block name="content" type="webatm/redirect" template="opay/redirect.phtml" />
+    </reference>
+  </webatm_processing_redirect>
+  <atm_processing_redirect>
+    <reference name="root">
+      <action method="setTemplate">
+        <template>page/2columns-right.phtml</template>
+      </action>
+      <block name="content" type="atm/redirect" template="opay/redirect.phtml" />
+    </reference>
+  </atm_processing_redirect>
+  <cvs_processing_redirect>
+    <reference name="root">
+      <action method="setTemplate">
+        <template>page/2columns-right.phtml</template>
+      </action>
+      <block name="content" type="cvs/redirect" template="opay/redirect.phtml" />
+    </reference>
+  </cvs_processing_redirect>
+  <alipay_processing_redirect>
+    <reference name="root">
+      <action method="setTemplate">
+        <template>page/2columns-right.phtml</template>
+      </action>
+      <block name="content" type="alipay/redirect" template="opay/redirect.phtml" />
+    </reference>
+  </alipay_processing_redirect>
+  <tenpay_processing_redirect>
+    <reference name="root">
+      <action method="setTemplate">
+        <template>page/2columns-right.phtml</template>
+      </action>
+      <block name="content" type="tenpay/redirect" template="opay/redirect.phtml" />
+    </reference>
+  </tenpay_processing_redirect>
+  <topupused_processing_redirect>
+    <reference name="root">
+      <action method="setTemplate">
+        <template>page/2columns-right.phtml</template>
+      </action>
+      <block name="content" type="topupused/redirect" template="opay/redirect.phtml" />
+    </reference>
+  </topupused_processing_redirect>
+	<credit3_processing_redirect>
+    <reference name="root">
+      <action method="setTemplate">
+        <template>page/2columns-right.phtml</template>
+      </action>
+      <block name="content" type="credit3/redirect" template="opay/redirect.phtml" />
+    </reference>
+  </credit3_processing_redirect>
+	<credit6_processing_redirect>
+    <reference name="root">
+      <action method="setTemplate">
+        <template>page/2columns-right.phtml</template>
+      </action>
+      <block name="content" type="credit6/redirect" template="opay/redirect.phtml" />
+    </reference>
+  </credit6_processing_redirect>
+	<credit12_processing_redirect>
+    <reference name="root">
+      <action method="setTemplate">
+        <template>page/2columns-right.phtml</template>
+      </action>
+      <block name="content" type="credit12/redirect" template="opay/redirect.phtml" />
+    </reference>
+  </credit12_processing_redirect>
+	<credit18_processing_redirect>
+    <reference name="root">
+      <action method="setTemplate">
+        <template>page/2columns-right.phtml</template>
+      </action>
+      <block name="content" type="credit18/redirect" template="opay/redirect.phtml" />
+    </reference>
+  </credit18_processing_redirect>
+	<credit24_processing_redirect>
+    <reference name="root">
+      <action method="setTemplate">
+        <template>page/2columns-right.phtml</template>
+      </action>
+      <block name="content" type="credit24/redirect" template="opay/redirect.phtml" />
+    </reference>
+  </credit24_processing_redirect>
+</layout>

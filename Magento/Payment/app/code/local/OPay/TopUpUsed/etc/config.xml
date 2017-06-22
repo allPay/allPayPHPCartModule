@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+    <modules>
+        <OPay_TopUpUsed>
+            <!-- declare module's version information for database updates -->
+            <version>1.2.0609</version>
+        </OPay_TopUpUsed>
+    </modules>
+
+    <global>
+        <helpers>
+            <topupused>
+                <class>OPay_TopUpUsed_Helper</class>
+            </topupused>
+        </helpers>
+        <blocks>
+            <topupused>
+                <class>OPay_TopUpUsed_Block</class>
+            </topupused>
+        </blocks>
+
+        <!-- declare model group for new module -->
+        <models>
+            <topupused>
+                <class>OPay_TopUpUsed_Model</class>
+            </topupused>
+        </models>
+
+        <!-- declare resource setup for new module -->
+        <resources>
+            <topupused_setup>
+                <setup>
+                    <module>OPay_TopUpUsed</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </topupused_setup>
+            <topupused_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </topupused_write>
+            <topupused_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </topupused_read>
+        </resources>
+    </global>
+  
+    <adminhtml>
+        <translate>
+            <modules>
+                <OPay_TopUpUsed>
+                    <files>
+                        <default>OPay_Modules.csv</default>
+                    </files>
+                </OPay_TopUpUsed>
+            </modules>
+        </translate>
+    </adminhtml>
+
+    <frontend>
+        <routers>
+            <topupused>
+                <use>standard</use>
+                <args>
+                    <module>OPay_TopUpUsed</module>
+                    <frontName>topupused</frontName>
+                </args>
+            </topupused>
+        </routers>
+        <layout>
+            <updates>
+                <topupused>
+                    <file>OPay.xml</file>
+                </topupused>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <OPay_TopUpUsed>
+                    <files>
+                        <default>OPay_Modules.csv</default>
+                    </files>
+                </OPay_TopUpUsed>
+            </modules>
+        </translate>
+    </frontend>
+
+    <!-- declare default configuration values for this module -->
+    <default>
+        <payment>
+            <topupused>
+                <active>0</active>
+                <model>topupused/all</model>
+                <order_status>pending</order_status>
+                <title>歐付寶(儲值消費)</title>
+                <allowspecific>0</allowspecific>
+                <use_store_currency>0</use_store_currency>
+                <request_type>authorize</request_type>
+                <test_mode>1</test_mode>
+                <fix_contact>1</fix_contact>
+                <hide_contact>0</hide_contact>
+                <enable_online_operations>0</enable_online_operations>
+                <merchant_id>2000132</merchant_id>
+                <hash_iv>v77hoKGq4kWxNNIS</hash_iv>
+                <hash_key>5294y06JbISpM5x9</hash_key>
+            </topupused>
+        </payment>
+    </default>
+</config>

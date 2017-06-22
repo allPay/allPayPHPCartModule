@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+    <modules>
+        <OPay_Credit6>
+            <!-- declare module's version information for database updates -->
+            <version>1.2.0609</version>
+        </OPay_Credit6>
+    </modules>
+
+    <global>
+        <helpers>
+            <credit6>
+                <class>OPay_Credit6_Helper</class>
+            </credit6>
+        </helpers>
+        <blocks>
+            <credit6>
+                <class>OPay_Credit6_Block</class>
+            </credit6>
+        </blocks>
+
+        <!-- declare model group for new module -->
+        <models>
+            <credit6>
+                <class>OPay_Credit6_Model</class>
+            </credit6>
+        </models>
+
+        <!-- declare resource setup for new module -->
+        <resources>
+            <credit6_setup>
+                <setup>
+                    <module>OPay_Credit6</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </credit6_setup>
+            <credit6_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </credit6_write>
+            <credit6_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </credit6_read>
+        </resources>
+    </global>
+  
+    <adminhtml>
+        <translate>
+            <modules>
+                <OPay_Credit6>
+                    <files>
+                        <default>OPay_Modules.csv</default>
+                    </files>
+                </OPay_Credit6>
+            </modules>
+        </translate>
+    </adminhtml>
+
+    <frontend>
+        <routers>
+            <credit6>
+                <use>standard</use>
+                <args>
+                    <module>OPay_Credit6</module>
+                    <frontName>credit6</frontName>
+                </args>
+            </credit6>
+        </routers>
+        <layout>
+            <updates>
+                <credit6>
+                    <file>OPay.xml</file>
+                </credit6>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <OPay_Credit6>
+                    <files>
+                        <default>OPay_Modules.csv</default>
+                    </files>
+                </OPay_Credit6>
+            </modules>
+        </translate>
+    </frontend>
+
+    <!-- declare default configuration values for this module -->
+    <default>
+        <payment>
+            <credit6>
+                <active>0</active>
+                <model>credit6/all</model>
+                <order_status>pending</order_status>
+                <title>歐付寶(信用卡6期)</title>
+                <allowspecific>0</allowspecific>
+                <use_store_currency>0</use_store_currency>
+                <request_type>authorize</request_type>
+                <test_mode>1</test_mode>
+                <fix_contact>1</fix_contact>
+                <hide_contact>0</hide_contact>
+                <enable_online_operations>0</enable_online_operations>
+                <merchant_id>2000132</merchant_id>
+                <hash_iv>v77hoKGq4kWxNNIS</hash_iv>
+                <hash_key>5294y06JbISpM5x9</hash_key>
+            </credit6>
+        </payment>
+    </default>
+</config>
