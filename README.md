@@ -65,7 +65,7 @@
 
 ### 稼腳瑈(じΜ蹿よΑ)
 
-[HikaShop 家舱更](https://github.com/allpay/AllPayPHPCartModule/tree/master/HikaShop/payment "Joomla 2.5.28 VirtueMart 2.6.4")
+[HikaShop 家舱更](https://github.com/allpay/AllPayPHPCartModule/tree/master/HikaShop/payment "Joomla_3.7.2 HikaShop_3.1.1")
 
 絪絏     UTF8
 
