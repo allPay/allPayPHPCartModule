@@ -1,4 +1,4 @@
-# WHMCS_AllPay_Mod V1
+# WHMCS_AllPay_Mod V1 (調整程式中，預計8月上線)
 ##WHMCS 歐付寶金流
 
 ###使用說明
