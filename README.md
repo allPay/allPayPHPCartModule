@@ -17,7 +17,7 @@
 
 〈 笆秨ミ〈 も笆秨ミ	
 
-[OpenCart 2.0 家舱更](https://github.com/allPay/allPayPHPCartModule/tree/master/OpenCart/e-invoice/2.0 "OpenCart 2.0")
+[OpenCart 2.0 家舱更](https://github.com/allPay/allPayPHPCartModule/tree/master/OpenCart/e-invoice "OpenCart 2.0")
 
 絪絏     UTF8
 
@@ -25,7 +25,7 @@
 
 ### 稼腳瑈
 
-[ECSHOP 家舱更](https://github.com/allPay/allPayPHPCartModule/tree/master/ECSHOP/payment "ECSHOP 2.7")
+[ECSHOP 家舱更](https://github.com/allPay/allPayPHPCartModule/tree/master/ECSHOP "ECSHOP 2.7")
 
 絪絏     UTF8
 
@@ -33,7 +33,7 @@
 
 ### 稼腳瑈
 
-[Magento 1.9.2.1~1.9.2.4 家舱更](https://github.com/allPay/allPayPHPCartModule/tree/master/Magento/payment "Magento 1.9.x")
+[Magento 1.9.2.1~1.9.2.4 家舱更](https://github.com/allPay/allPayPHPCartModule/tree/master/Magento "Magento 1.9.x")
 
 絪絏     UTF8
 
@@ -49,7 +49,7 @@
 
 ### 稼腳瑈(じΜ蹿よΑ)
 
-[PrestaShop 家舱更](https://github.com/allPay/allPayPHPCartModule/tree/master/PrestaShop/payment "PrestaShop")
+[PrestaShop 家舱更](https://github.com/allPay/allPayPHPCartModule/tree/master/PrestaShop "PrestaShop")
 
 絪絏     UTF8
 
@@ -57,7 +57,7 @@
 
 ### 稼腳瑈(じΜ蹿よΑ)
 
-[osCommerce 家舱更](https://github.com/allPay/allPayPHPCartModule/tree/master/osCommerce/payment "osCommerce")
+[osCommerce 家舱更](https://github.com/allPay/allPayPHPCartModule/tree/master/osCommerce "osCommerce")
 
 絪絏     UTF8
 
@@ -65,7 +65,7 @@
 
 ### 稼腳瑈(じΜ蹿よΑ)
 
-[HikaShop 家舱更](https://github.com/allpay/AllPayPHPCartModule/tree/master/HikaShop/payment "Joomla_3.7.2 HikaShop_3.1.1")
+[HikaShop 家舱更](https://github.com/allpay/AllPayPHPCartModule/tree/master/HikaShop "Joomla_3.7.2 HikaShop_3.1.1")
 
 絪絏     UTF8
 
@@ -73,7 +73,7 @@
 
 ### 稼腳瑈(じΜ蹿よΑ)
 
-[VirtueMart 家舱更](https://github.com/allPay/allPayPHPCartModule/tree/master/VirtueMart/payment "Joomla 2.5.28 VirtueMart 2.6.22")
+[VirtueMart 家舱更](https://github.com/allPay/allPayPHPCartModule/tree/master/VirtueMart "Joomla 2.5.28 VirtueMart 2.6.22")
 
 絪絏     UTF8
 
