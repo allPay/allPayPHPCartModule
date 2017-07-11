@@ -1,7 +1,6 @@
 
 <p class="payment_module">
-	<a href="{$link->getModuleLink('allpay', 'payment')|escape:'html'}" title="{l s='Pay by allPay Integration Payment' mod='allpay'}">
-		<img src="{$allpay_img_path}allpay_payment_logo.png" alt="{l s='Pay by allPay Integration Payment' mod='allpay'}" width="148" height="52" />
-		{l s='Pay by allPay Integration Payment' mod='allpay'}
-	</a>
+    <a href="{$link->getModuleLink('opay', 'payment')|escape:'html'}" title="{l s='Pay by O\'Pay Integration Payment' mod='opay'}">
+        <img src="{$opay_img_path}opay_payment_logo_01.png" alt="{l s='Pay by O\'Pay Integration Payment' mod='opay'}" width="200" height="55" />
+    </a>
 </p>
