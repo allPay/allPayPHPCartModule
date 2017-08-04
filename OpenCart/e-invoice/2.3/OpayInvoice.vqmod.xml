@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification>
+   <id>O'Pay Invoice</id>
+   <version>1.0.0706</version>
+   <vqmver>2.X</vqmver>
+   <author><a href="https://www.allpay.com.tw/">O'Pay</a></author>
+   <file name="catalog/view/theme/*/template/checkout/payment_method.tpl">
+       <operation info="invoice info input">
+           <search position="top"><![CDATA[
+           <p><strong><?php echo $text_comments; ?></strong></p>
+           ]]></search>
+           <add><![CDATA[
+           <?php include_once("catalog/controller/extension/module/opayinvoice_input.php");?>
+           ]]></add>
+       </operation>
+   </file>
+   <file name="catalog/controller/checkout/payment_method.php">
+       <operation info="invoice info input">
+           <search position="after"><![CDATA[
+           model_extension_extension->getExtensions('payment');
+           ]]></search>
+           <add><![CDATA[
+           include_once("catalog/controller/extension/module/opayinvoice_status.php");
+           ]]></add>
+       </operation>
+   </file>
+   <file name="catalog/controller/checkout/confirm.php">
+       <operation info="invoice info save">
+           <search position="after"><![CDATA[
+           $this->model_checkout_order->addOrder($order_data);
+           ]]></search>
+           <add><![CDATA[
+           include_once("catalog/controller/extension/module/opayinvoice_save.php");
+           ]]></add>
+       </operation>
+   </file>
+   <file name="admin/view/template/sale/order_info.tpl">
+       <operation info="invoice info save">
+           <search position="replace"><![CDATA[
+           url: 'index.php?route=sale/order/createinvoiceno&token=<?php echo $token; ?>&order_id=<?php echo $order_id; ?>',
+           ]]></search>
+           <add><![CDATA[
+           url: 'index.php?route=extension/payment/opayinvoice/createinvoiceno&token=<?php echo $token; ?>&order_id=<?php echo $order_id; ?>',
+           ]]></add>
+       </operation>
+   </file>
+</modification>
