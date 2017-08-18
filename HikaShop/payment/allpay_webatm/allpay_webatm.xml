@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="2.5" method="upgrade" group="hikashoppayment">    
+	<name>HikaShop allPay Web-ATM payment plugin</name>
+	<creationDate>15 Fabruary 2016</creationDate>
+	<version>1.0.1</version>
+	<author>allPay</author>
+	<authorEmail>services@allpay.com.tw</authorEmail>
+	<authorUrl>https://www.allpay.com.tw/</authorUrl>
+	<copyright>Copyright © 2015 allPay Electronic Payment Co., Ltd. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description>This plugin enables you to setup your Hikashop for Joomla allPay payment system</description>
+	<files>
+		<filename plugin="allpay_webatm">allpay_webatm.php</filename>
+		<filename>AllPay.Payment.Integration.php</filename>
+		<filename>allpay_cart_ext.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<params addpath="/components/com_hikashop/params">
+		<param name="pluginoptions" type="pluginoptions" default="plugin" label="hikashop" description="HikaShop options" />
+	</params>
+	<config>
+		<fields name="params" addfieldpath="/components/com_hikashop/fields">
+			<fieldset name="basic">
+				<field id="pluginoptions" name="pluginoptions" type="pluginoptions" label="hikashop" description="HikaShop options" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
