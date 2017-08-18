@@ -20,7 +20,7 @@ class WC_ALLPayinvoice_Settings extends WC_Settings_Page {
 	public function __construct() {
 
 		$this->id    = 'allpayinvoice';
-		$this->label = __( 'ALLPay電子發票', 'woocommerce-allpayinvoice' );
+		$this->label = __( 'allPay電子發票', 'woocommerce-allpayinvoice' );
 
 		parent::__construct();
 
@@ -35,7 +35,7 @@ class WC_ALLPayinvoice_Settings extends WC_Settings_Page {
 	public function get_sections() {
 
 		return array(
-			'config'    => __( 'ALLPay電子發票', 'woocommerce-allpayinvoice' )
+			'config'    => __( 'allPay電子發票', 'woocommerce-allpayinvoice' )
 		);
 	}
 
@@ -124,7 +124,7 @@ class WC_ALLPayinvoice_Settings extends WC_Settings_Page {
 					array(
 						'id'       => 'wc_allpay_invoice_enabled',
 						'title'    => __( '是否啟用' ),
-						'desc_tip' => __( '啟用ALLPay電子發票', 'woocommerce-allpayinvoice' ),
+						'desc_tip' => __( '啟用allPay電子發票', 'woocommerce-allpayinvoice' ),
 						'type'     => 'select',
 						'options'  => array(
 							'enable'  => __( '啟用', 'woocommerce-allpayinvoice' ),

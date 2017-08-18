@@ -1,16 +1,16 @@
 <?php
 /**
- * Plugin Name: WooCommerce ALLPayinvoice
+ * @copyright  Copyright © 2017 O'Pay Electronic Payment Co., Ltd.(https://www.allpay.com.tw)
+ * @version 1.1.0801
+ *
+ * Plugin Name: allPay Invoice
  * Plugin URI: https://www.allpay.com.tw
  * Description: allPay Invoice For WooCommerce
- * Author: allPay Electronic Payment Co., Ltd.
+ * Author: O'Pay Electronic Payment Co., Ltd.
  * Author URI: https://www.allpay.com.tw
- * Version: V1.0.0222
+ * Version: 1.1.0801
  * Text Domain: woocommerce-allpayinvoice
  * Domain Path: /i18n/languages/
- *
- * @package   WC-ALLPayInvoice
- * @author    ALLPay
  */
 
 defined( 'ABSPATH' ) or exit;
@@ -134,9 +134,8 @@ function wc_allpayinvoice_wc_invoice_inactive_notice() {
  */
 class WC_ALLPayinvoice {
 
-
 	/** plugin version number */
-	const VERSION = 'v.1.0.0222';
+	const VERSION = 'v.1.1.0801';
 
 	/** @var \WC_ALLPayinvoice single instance of this plugin */
 	protected static $instance;
@@ -196,7 +195,7 @@ class WC_ALLPayinvoice {
 	public function __clone() {
 
 		/* translators: Placeholders: %s - plugin name */
-		_doing_it_wrong( __FUNCTION__, sprintf( esc_html__( 'You cannot clone instances of %s.', 'woocommerce-allpayinvoice' ), 'WooCommerce ALLPayinvoice' ), 'v.1.0.0222' );
+		_doing_it_wrong( __FUNCTION__, sprintf( esc_html__( 'You cannot clone instances of %s.', 'woocommerce-allpayinvoice' ), 'WooCommerce ALLPayinvoice' ), 'v.1.1.0801' );
 	}
 
 
@@ -208,7 +207,7 @@ class WC_ALLPayinvoice {
 	public function __wakeup() {
 
 		/* translators: Placeholders: %s - plugin name */
-		_doing_it_wrong( __FUNCTION__, sprintf( esc_html__( 'You cannot unserialize instances of %s.', 'woocommerce-allpayinvoice' ), 'WooCommerce ALLPayinvoice' ), 'v.1.0.0222' );
+		_doing_it_wrong( __FUNCTION__, sprintf( esc_html__( 'You cannot unserialize instances of %s.', 'woocommerce-allpayinvoice' ), 'WooCommerce ALLPayinvoice' ), 'v.1.1.0801' );
 	}
 
 
@@ -300,97 +299,66 @@ class WC_ALLPayinvoice {
 			var $ = jQuery.noConflict();
 
 			$( document ).ready(function() {
-
 				$("#billing_love_code").val("");
 				$("#billing_customer_identifier").val("");
 				$("#billing_carruer_num").val("");
-
 				$("#billing_carruer_type").val("0");
 				$("#billing_invoice_type").val("p");
-
 				$("#billing_customer_identifier_field").slideUp();
 				$("#billing_love_code_field").slideUp();
 				$("#billing_carruer_num_field").slideUp();
-			});
 
-			$("#billing_invoice_type").change(function(){
+				$("#billing_invoice_type").change(function() {
+					invoice_type = $("#billing_invoice_type").val();
+					carruer_type = $("#billing_carruer_type").val(); // 載具類型
 
-				invoice_type = $("#billing_invoice_type").val();
-
-				carruer_type = $("#billing_carruer_type").val();	// 載具類型
-
-				if(invoice_type == 'p')
-				{
-					$("#billing_customer_identifier_field").slideUp();
-					$("#billing_love_code_field").slideUp();
-
-					$("#billing_customer_identifier").val("");
-					$("#billing_love_code").val("");
-				}
-				else if(invoice_type == 'c')
-				{
-					$("#billing_customer_identifier_field").slideDown();
-					$("#billing_love_code_field").slideUp();
-
-					$("#billing_love_code").val("");
-
-					if(carruer_type == '2')
-					{
-						// 
-						$("#billing_carruer_type").val("0");
-						$("#billing_carruer_num").val("");
-
-						$("#billing_carruer_num_field").slideUp();
+					if (invoice_type == 'p') {
+						$("#billing_customer_identifier_field").slideUp();
+						$("#billing_love_code_field").slideUp();
+						$("#billing_customer_identifier").val("");
+						$("#billing_love_code").val("");
+					} else if(invoice_type == 'c') {
+						$("#billing_customer_identifier_field").slideDown();
+						$("#billing_love_code_field").slideUp();
+						$("#billing_love_code").val("");
+						if(carruer_type == '2') {
+							$("#billing_carruer_type").val("0");
+							$("#billing_carruer_num").val("");
+							$("#billing_carruer_num_field").slideUp();
+						}
+					} else if(invoice_type == 'd') {
+						$("#billing_customer_identifier_field").slideUp();
+						$("#billing_love_code_field").slideDown();
+						$("#billing_customer_identifier").val("");
 					}
-				}
-				else if(invoice_type == 'd')
-				{
-					$("#billing_customer_identifier_field").slideUp();
-					$("#billing_love_code_field").slideDown();
+				});
 
-					$("#billing_customer_identifier").val("");
-				}
+				// 載具判斷
+				$("#billing_carruer_type").change(function() {
+					carruer_type = $("#billing_carruer_type").val();
+					invoice_type = $("#billing_invoice_type").val();
+					identifier = $("#billing_customer_identifier").val();
 
-			});
-
-			// 載具判斷
-			$("#billing_carruer_type").change(function(){
-
-				carruer_type = $("#billing_carruer_type").val();
-				invoice_type = $("#billing_invoice_type").val();
-				identifier = $("#billing_customer_identifier").val();
-
-				// 無載具
-				if(carruer_type == '0')
-				{
-					$("#billing_carruer_num_field").slideUp();
-					$("#billing_carruer_num").val("");
-				}
-				else if(carruer_type == '2') // 自然人憑證
-				{
-					if(identifier != '' || invoice_type == 'c')
-					{
-						alert('公司發票，不能使用自然人憑證做為載具');
-						$("#billing_carruer_type").val("0");
-						$("#billing_carruer_num").val("");
-
+					// 無載具
+					if(carruer_type == '0') {
 						$("#billing_carruer_num_field").slideUp();
-					}
-					else
-					{
+						$("#billing_carruer_num").val("");
+					} else if(carruer_type == '2') {
+						// 自然人憑證
+						if(identifier != '' || invoice_type == 'c') {
+							alert('公司發票，不能使用自然人憑證做為載具');
+							$("#billing_carruer_type").val("0");
+							$("#billing_carruer_num").val("");
+							$("#billing_carruer_num_field").slideUp();
+						} else {
+							$("#billing_carruer_num_field").slideDown();
+						}
+					} else if(carruer_type == '3') {
 						$("#billing_carruer_num_field").slideDown();
 					}
-				}
-				else if(carruer_type == '3')
-				{
-					$("#billing_carruer_num_field").slideDown();
-
-
-				}
-
+				});
 			});
-                   
-                </script>
+        </script>
 		<?php
 
 
@@ -666,19 +634,28 @@ class WC_ALLPayinvoice {
 				// 3.寫入發票相關資訊
 
 				// 取得商品資訊
-				$aItems_Tmp	= array();
-				$aItems		= array();
-		                $aItems_Tmp 	= $oOrder_Obj->get_items();
+				$aItems_Tmp = array();
+				$aItems     = array();
+                $aItems_Tmp = $oOrder_Obj->get_items();
 
-		                foreach($aItems_Tmp as $key1 => $value1)
-		                {
-		                	$aItems[$key1]['ItemName'] 	= $value1['name'];										// 商品名稱 ItemName
-		                	$aItems[$key1]['ItemCount'] 	= $value1['item_meta']['_qty'][0]; 								// 數量 ItemCount
-		                	$aItems[$key1]['ItemAmount'] 	= round($value1['item_meta']['_line_total'][0] + $value1['item_meta']['_line_tax'][0]) ;  	// 小計 ItemAmount
-		                	$aItems[$key1]['ItemPrice'] 	= $aItems[$key1]['ItemAmount'] / $aItems[$key1]['ItemCount'] ;  				// 單價 ItemPrice
-		                }
-
-				// $oOrder_Obj->add_order_note( print_r($aItems, true)); // debug
+                global $woocommerce;
+                if ( version_compare( $woocommerce->version, '3.0', ">=" ) ) {
+                    foreach($aItems_Tmp as $key1 => $value1)
+                    {
+                        $aItems[$key1]['ItemName'] = $value1['name']; // 商品名稱 ItemName
+                        $aItems[$key1]['ItemCount'] = $value1['quantity']; // 數量 ItemCount
+                        $aItems[$key1]['ItemAmount'] = round($value1['total'] + $value1['total_tax']); // 小計 ItemAmount
+                        $aItems[$key1]['ItemPrice'] = $aItems[$key1]['ItemAmount'] / $aItems[$key1]['ItemCount'] ; // 單價 ItemPrice
+                    }
+                } else {
+                    foreach($aItems_Tmp as $key1 => $value1)
+                    {
+                        $aItems[$key1]['ItemName'] = $value1['name']; // 商品名稱 ItemName
+                        $aItems[$key1]['ItemCount'] = $value1['item_meta']['_quantity'][0]; // 數量 ItemCount
+                        $aItems[$key1]['ItemAmount'] = round($value1['item_meta']['_line_total'][0] + $value1['item_meta']['_line_tax'][0]); // 小計 ItemAmount
+                        $aItems[$key1]['ItemPrice'] = $aItems[$key1]['ItemAmount'] / $aItems[$key1]['ItemCount'] ; // 單價 ItemPrice
+                    }
+                }
 
 				foreach($aItems as $key2 => $value2)
 		                {
@@ -1092,7 +1069,6 @@ function my_action_javascript_issue_invalid_allpay() {
 						location.reload();
 					});
 				}
-				
 			}
 		</script>
 	<?php
@@ -1117,5 +1093,3 @@ function orderid_return_issue_invalid_allpay() {
 
 	wp_die(); // this is required to terminate immediately and return a proper response
 }
-
-

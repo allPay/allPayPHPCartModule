@@ -4,7 +4,7 @@
 版本:V1.0.0122
 @author Wesley
 */
- 
+
 // 執行發票作業項目。
 abstract class InvoiceMethod
 {
